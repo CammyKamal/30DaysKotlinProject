@@ -28,6 +28,7 @@ This Repository contains a CurrencyActivity that contains CurrencyFragment which
 6. Kotlin Datatypes
 7. Data Class
 8. Smart Casting of variables
+9. Sealed Keywords
 
 ## Android Components Used
 1. Data Binding
