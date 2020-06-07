@@ -21,7 +21,7 @@ This Repository contains a CurrencyActivity that contains CurrencyFragment which
 
 ## Kotlin Concepts Used
 1. Null Safety Concept
-2. Kotlin Lamba's
+2. Kotlin Lambda's
 3. Coroutines
 4. Functions
 5. lateinit
