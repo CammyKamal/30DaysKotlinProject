@@ -1,0 +1,61 @@
+plugins {
+    id('com.android.library')
+    id('kotlin-android')
+    id('kotlin-android-extensions')
+    id('kotlin-kapt')
+    id('androidx.navigation.safeargs.kotlin')
+}
+android {
+    compileSdkVersion compile_Sdk_Version
+    buildToolsVersion build_Tools_Version
+
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode version_code
+        versionName version_name
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding{
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:$androidx_appcompat_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigation_fragment_ktx"
+    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigation_ui_ktx"
+    implementation project(path: ':base-lib')
+    implementation "androidx.core:core-ktx:$core_ktx"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext_junit_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_core"
+
+    /**
+     * RX JAVA
+     */
+    implementation "io.reactivex.rxjava2:rxandroid:$rxjava2_android_version"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version"
+    /**
+     * DAGGER
+     */
+    implementation "com.google.dagger:dagger:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    implementation project(':exchange-domain')
+    implementation project(':exchange-data')
+    implementation project(path: ':base-lib')
+}

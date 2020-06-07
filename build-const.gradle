@@ -1,0 +1,82 @@
+ext {
+    // Sub projects should use these
+    minSdk = 21
+    targetSdk = 29
+    compile_Sdk_Version=29
+    version_code=1
+    version_name='1.0'
+    build_Tools_Version='29.0.1'
+    junit_version='4.12'
+
+    java_version='1.6'
+    gradle_version='3.4.2'
+
+    // Sub projects should consider using these but can use their own.
+    kotlin_version = '1.3.40'
+
+    androidx_appcompat_version = '1.0.2'
+    core_ktx='1.2.0'
+    androidx_core_version = '1.0.1'
+    androidx_constraintlayout='1.1.3'
+    androidx_legacy='1.0.0'
+    androidx_lifecycle='2.1.0'
+    androidx_navigation_fragment='2.0.0-rc02'
+    androidx_navigation_ui='2.0.0-rc02'
+    androidx_multidex='2.0.0'
+    //TODO : Update constrain_layout beta version to stable version once its available.
+    androidx_constraint_version = '2.0.0-beta1'
+    androidx_paging = "2.1.0"
+    androidx_lifecycle_version = "2.0.0"
+    androidx_browser = "1.0.0"
+    androidx_arch = "2.0.0"
+
+    // TODO Migrate to stable 2.1.0 version when available
+    // Cause: Stable 2.0.0 version does not support Single<Long> return type for @Insert functions
+    // Used in: AnalyticsBatchDao#add
+    androidx_room_version = "2.1.0"
+    androidx_work_version = "1.0.1"
+    androidx_test_runner_version = '1.1.0'
+    androidx_test_rules_version = '1.1.0'
+    androidx_test_core_version = '1.0.0'
+    androidx_test_ext_junit_version = '1.1.1'
+    androidx_test_ext_truth_version = '1.0.0'
+    androidx_core_testing_version = '2.0.0'
+    ui_automator = '2.2.0-beta02'
+    mock_webserver_version = '4.2.1'
+    nav_version = '2.1.0-alpha04'
+
+    material_version = '1.1.0-alpha06'
+
+    //FIXME: project doesn't build with latest version 2.19
+    //FIXME: https://github.com/google/dagger/issues/1245
+    dagger_version = '2.24'
+    mockito_version = '2.23.0'
+    mockito_kotlin = '2.0.0-RC3'
+    mockk_version = '1.9.1'
+    espresso_version = '3.1.0-beta02'
+    espresso_core='3.1.1'
+    javax_inject_version = '1'
+    powermock_version = '2.0.0-beta.5'
+    rxjava2_version = '2.2.3'
+    rxjava2_android_version = '2.1.1'
+    rxkotlin_version = '2.3.0'
+    retrofitVersion = "2.6.0"
+    okhttp_version = "3.12.1"
+    junit_version = '4.12'
+    glide_version = "4.9.0"
+    core_testing_version = '2.0.0'
+    live_data_extensions_version = "1.3.0"
+    reactive_streams_version = "2.1.0-alpha03"
+    rxJavaVersion = "2.0.1"
+    coroutines_version = '1.3.0'
+    androidxCollection_version = '1.0.0'
+    legacyCoreUtils = '1.0.0'
+    room_version = '2.2.2'
+    gson_version = '2.8.5'
+    navigation_fragment_ktx = '2.1.0'
+    navigation_ui_ktx = '2.1.0'
+    junit_test_version = '4.12'
+    junit_android_test_version = '1.1.1'
+    androidx_core_ktx_version = '1.1.0'
+    constraint_layout_version = '1.1.3'
+}

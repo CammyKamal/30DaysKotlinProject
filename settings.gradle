@@ -1,0 +1,13 @@
+include ':base-lib'
+include ':app'
+rootProject.name = "30DaysKotlin"
+
+
+include ':exchange-data'
+project(':exchange-data').projectDir = new File('exchange/exchange-data')
+
+include ':exchange-domain'
+project(':exchange-domain').projectDir = new File('exchange/exchange-domain')
+
+include ':exchange-ui'
+project(':exchange-ui').projectDir = new File('exchange/exchange-ui')
