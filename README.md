@@ -3,7 +3,7 @@
 ## Android-Kotlin-Fundamentals
 This repository contains Android Studio project created using concepts learned from 30 days Kotlin Challenge Codelabs.This is my final code submitted by me for Kotlin Challenge.
 
-## This project is created and submitted under the underlines of Challenge
+## This project is created and submitted under the guidelines of Challenge
 1. Used Kotlin as primary language of the app.
 2. Implemented at least 3 Kotlin concepts that was learned recently. 
 3. Used Android Studio to build an Android app using Kotlin.
